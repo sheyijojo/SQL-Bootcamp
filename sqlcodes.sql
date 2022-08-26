@@ -194,5 +194,30 @@ SELECT * FROM cats WHERE name='Egg';
 DELETE FROM cats WHERE name='Egg';
 
 
-DELETE * FROM cats;
+DELETE FROM cats;
+WHERE CONDITION;
 --This deletes all entries in the table but the table is intact.
+
+
+
+--8/26/2022
+--CRUDE EXERCISE. EX_CRUDE
+
+
+
+
+
+CREATE TABLE shirts(shirts_id INT AUTO_INCREMENT NOT NULL, 
+article VARCHAR(15) NOT NULL, color VARCHAR(10) NOT NULL, 
+shirt_size VARCHAR(5) NOT NULL, last_worn INT NOT NULL, 
+shirts_id));
+
+--show columns
+DESC shirts;
+
+INSERT INTO shirts( shirts_id, article, color, shirt_size, last_worn)
+    VALUES(1, 't-shirt', 'white', 's', 10);
+
+INSERT INTO shirts( shirts_id, article, color, shirt_size, last_worn)
+    VALUES(1, 't-shirt', 'white', 's', 10);
+	('t-shirt', 'white', 's', 10);
